@@ -1,0 +1,14 @@
+#+TITLE: 1D Linear Advection using Finite Elements
+The code in ~main.c~ uses PETSc to solve the 1D linear advection equation with finite elements. The linear advection equation is given by:
+\begin{*equation}
+  \frac{\delta u}{\delta x} = \frac{\delta u}{\delta t}, ~ 0 < x < 10
+\end{*equation}
+
+Where the spatial domain is between 0 and 10.
+
+Here we use constant (Dirichlet) boundary conditions defined as follows:
+
+\begin{*equation}
+ u = 0 ~ \text{for} ~ x = 10, ~ x = 0
+\end{*equation}
+
